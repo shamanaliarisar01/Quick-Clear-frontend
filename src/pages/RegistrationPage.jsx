@@ -32,7 +32,7 @@ const Register = ({ onRegister, onSwitch }) => {
     setLoading(true);
 
     try {
-      const response = await axios.post('/api/register', {
+      const response = await axios.post('https://quick-clear-backend-production.up.railway.app/api/register', {
         username: formData.username,
         email: formData.email,
         password: formData.password
