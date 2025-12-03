@@ -24,7 +24,7 @@ const Login = ({ onLogin, onSwitch }) => {
     setLoading(true);
 
     try {
-      const response = await axios.post('https://quick-clear-backend-production.up.railway.app//api/login', formData);
+      const response = await axios.post('https://quick-clear-backend-production.up.railway.app/api/login', formData);
       onLogin(response.data.user, response.data.token);
     } catch (error) {
       setError(error.response?.data?.message || 'Failed to connect to server');
