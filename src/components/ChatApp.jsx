@@ -16,7 +16,7 @@ import {
   MoreVertical
 } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://quick-clear-backend-production.up.railway.app';
 
 const ChatApp = ({ user, onLogout }) => {
   const [socket, setSocket] = useState(null);
